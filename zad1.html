@@ -1,0 +1,131 @@
+
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"></html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content =" "width="device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content = "ie-edge" />
+    <title>Gierki komputerowe</title>
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/locations-redesign/48/Games1-512.png">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    <section id="nav-bar">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="index.html">PIW</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="zad1.html">Zad 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="zad2.html">Zad 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="zad3.html">Zad 3</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="zad4.html">Zad 4</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="zad5.html">Zad 5</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="zad6.html">Zad 6</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </section>
+    <section id="banner">
+        <div class="container">
+            <form method="post" action="checkAll()">
+                <div class="row">
+                    <label for="firstName">Imię: </label>
+                    <input type="text" id="firstName" name="firstName" value="" />
+                    <small id="errorName">Złe imię (przynajmniej 3 znaki, same litery, alfabet angielski)</small>
+                </div>
+                <div class="row">
+                    <label for="lastName">Nazwisko: </label>
+                    <input type="text" id="lastName" name="lastName" value="" />
+                    <small id="errorLastName">Złe nazwisko (przynajmniej 3 znaki, same litery, alfabet angielski)</small>
+                </div>
+                <div class="row">
+                    <label for="telephone">Numer telefonu: </label>
+                    <input type="text" id="telephone" name="telephone" value="" />
+                    <small id="errorTelephone">Zły numer telefonu (z kierunkowym, + i 11 cyfr)</small>
+                </div>
+                <div class="row">
+                    <label for="birthDate">Data urodzenia: </label>
+                    <input type="text" id="birthDate" name="birthDate" value="" />
+                    <small id="errorBirthDate">Zły format</small>
+                </div>
+                <div class="row">
+                    <label for="email">Adres e-mail: </label>
+                    <input type="text" id="email" name="email" value="" />
+                    <small id="errorEmail">Zły email</small>
+                </div>
+                <div class="row">
+                    <label for="login">Login: </label>
+                    <input type="text" id="login" name="login" value="" />
+                    <small id="errorLogin">Zły login (przynajmniej 3 znaki, małe litery)</small>
+                </div>
+                <div class="row">
+                    <label for="password">Hasło: </label>
+                    <input type="text" id="password" name="password" value="" />
+                    <small id="errorPassword">Złe hasło (przynajmniej 3 znaki)</small>
+                </div>
+                <div class="row">
+                    <label for="password2">Powtórz hasło: </label>
+                    <input type="text" id="password2" name="password2" value="" />
+                    <small id="errorPassword2">Nie takie samo jak pierwsze</small>
+                </div>
+            </form>
+            <div class="row">
+                <button id="submit" onclick="checkAll()">Wyślij</button>
+            </div>
+        </div>
+        <div class="row">
+            <h1 id="header">DOBRZE</h1>
+        </div>
+        <div class="row">
+            <h4 id="goodName"></h4>
+        </div>
+        <div class="row">
+            <h4 id="goodLastName"></h4>
+        </div>
+        <div class="row">
+            <h4 id="goodTelephone"></h4>
+        </div>
+        <div class="row">
+            <h4 id="goodDay"></h4>
+        </div>
+        <div class="row">
+            <h4 id="goodMonth"></h4>
+        </div>
+        <div class="row">
+            <h4 id="goodYear"></h4>
+        </div>
+        <div class="row">
+            <h4 id="goodEmail"></h4>
+        </div>
+        <div class="row">
+            <h4 id="goodLogin"></h4>
+        </div>
+        <div class="row">
+            <h4 id="goodPassword"></h4>
+        </div>
+        <div class="row">
+            <h4 id="goodPassword2"></h4>
+        </div>
+        
+    </section>
+
+</body>
+<script src="zad1.js"></script>
+</html>
